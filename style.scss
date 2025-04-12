@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    z-index: 9;
+
+    padding: 15vw 10vw;
+
+
+    #loading-line {
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+        height: 2px;
+        background-color: white;
+
+        margin: 0 -10vw;
+    }
+
+    .line {
+
+        height: fit-content;
+        overflow: hidden;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1vw;
+        .counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5vw;
+
+            h5 {
+                font-size: 4vw;
+                text-align: end;
+
+                font-style: italic;
+            }
+
+            //fixing the width of the growingcounter so that when number changes it won't change with it. 
+            #growingCounter {
+                width: 6vw;
+                text-align: end;
+            }
+        }
+
+
+        h1 {
+            font-size: 6.5vw;
+            line-height: 7vw;
+            text-transform: uppercase;
+            font-family: 'Plain Light';
+            font-weight: 900;
+        }
+
+        #nowText {
+            animation-name: nowAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        
+    }
+}
+
+@keyframes nowAnimation {
+    0% {
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px white;
+        color: white;
+    }
+
+    100% {
+        font-family: 'Silk Serif';
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+    }
+}
+
+main {
+    position: relative;
+    opacity: 0;
+}
+
+
+

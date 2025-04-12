@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  padding: 15vw 10vw;
+}
+.loader #loading-line {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin: 0 -10vw;
+}
+.loader .line {
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+.loader .line .counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+}
+.loader .line .counter h5 {
+  font-size: 4vw;
+  text-align: end;
+  font-style: italic;
+}
+.loader .line .counter #growingCounter {
+  width: 6vw;
+  text-align: end;
+}
+.loader .line h1 {
+  font-size: 6.5vw;
+  line-height: 7vw;
+  text-transform: uppercase;
+  font-family: "Plain Light";
+  font-weight: 900;
+}
+.loader .line #nowText {
+  animation-name: nowAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nowAnimation {
+  0% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px white;
+    color: white;
+  }
+  100% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+}
+main {
+  position: relative;
+  opacity: 0;
+}/*# sourceMappingURL=style.css.map */
