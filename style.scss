@@ -1,102 +1,854 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
 }
 
 .loader {
-    background-color: black;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  z-index: 9;
+
+  padding: 15vw 10vw;
+
+  // display: none;
+
+  #loading-line {
+    position: absolute;
+    top: 0;
+
     width: 100%;
-    height: 100%;
+    height: 2px;
+    background-color: white;
 
-    position: fixed;
-    z-index: 9;
+    margin: 0 -10vw;
+  }
 
-    padding: 15vw 10vw;
+  .line {
+    height: fit-content;
+    overflow: hidden;
 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+    .counter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5vw;
 
-    #loading-line {
-        position: absolute;
-        top: 0;
+      h5 {
+        font-size: 4vw;
+        text-align: end;
 
-        width: 100%;
-        height: 2px;
-        background-color: white;
+        font-style: italic;
+      }
 
-        margin: 0 -10vw;
+      //fixing the width of the growingcounter so that when number changes it won't change with it.
+      #growingCounter {
+        width: 6vw;
+        text-align: end;
+      }
     }
 
-    .line {
-
-        height: fit-content;
-        overflow: hidden;
-
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 1vw;
-        .counter {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5vw;
-
-            h5 {
-                font-size: 4vw;
-                text-align: end;
-
-                font-style: italic;
-            }
-
-            //fixing the width of the growingcounter so that when number changes it won't change with it. 
-            #growingCounter {
-                width: 6vw;
-                text-align: end;
-            }
-        }
-
-
-        h1 {
-            font-size: 6.5vw;
-            line-height: 7vw;
-            text-transform: uppercase;
-            font-family: 'Plain Light';
-            font-weight: 900;
-        }
-
-        #nowText {
-            animation-name: nowAnimation;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-        }
-        
+    h1 {
+      font-size: 6.5vw;
+      line-height: 7vw;
+      text-transform: uppercase;
+      font-family: "Plain Light";
+      font-weight: 900;
     }
+
+    #nowText {
+      font-size: 100;
+
+      animation-name: nowAnimation;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+  }
 }
 
 @keyframes nowAnimation {
-    0% {
-        font-family: 'Plain Light';
-        -webkit-text-stroke: 1px white;
-        color: white;
-    }
+  0% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px white;
+    color: white;
+  }
 
-    100% {
-        font-family: 'Silk Serif';
-        -webkit-text-stroke: 1px white;
-        color: transparent;
-    }
+  100% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
 }
 
 main {
-    position: relative;
-    opacity: 0;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #151515;
 }
 
+#cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background-color: transparent;
+  z-index: 5;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  mix-blend-mode: difference;
+
+  display: none;
+}
+
+#nav-hero {
+  width: 100%;
+  overflow: hidden;
+
+  nav {
+    padding: 2.5vw 4.25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.25vw;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75vw;
+
+      a {
+        text-decoration: none;
+        font-size: 0.85vw;
+        text-transform: capitalize;
+        font-family: "Plain Light";
+        letter-spacing: -5%;
+      }
+    }
+  }
+
+  #hero {
+    width: 75%;
+    margin-left: auto;
+    margin-top: 6%;
+    .centerText {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      h1 {
+        font-size: 7vw;
+        font-family: "Plain Light";
+        line-height: 7vw;
+        text-transform: uppercase;
+        letter-spacing: 0.25vw;
+      }
+    }
+
+    // Hover Text Styling
+    .webTextAnimation {
+      border-bottom: 0.5vw solid white;
+      padding-bottom: 1vw;
+      width: 20%;
+      margin-right: 7%;
+    }
+
+    .graphicTextAnimation {
+      border-bottom: 0.5vw solid white;
+      padding-bottom: 1vw;
+    }
+
+    .webTextAnimation:hover {
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+      font-weight: 100;
+      border-bottom: none;
+    }
+
+    .graphicTextAnimation:hover {
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+      font-weight: 100;
+      border-bottom: none;
+    }
+  }
+
+  #hero-section-video {
+    width: 100%;
+    padding: 5vw;
+
+    #video-container {
+      width: 70%;
+      height: 30vw;
+      margin-left: auto;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+      }
+
+      #video-cursor {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 100%;
+        position: absolute;
+        background-color: #ffa63d;
+
+        top: -15%;
+        right: 10%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 3vw;
+        }
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#ourProject {
+
+  width: 100%;
+  font-family: 'Plain Light';
 
 
+  .ourProject-title {
+    width: 75%;
+    margin-left: auto;
+
+    h1 {
+      font-size: 7vw;
+      text-transform: uppercase;
+    }
+  }
+
+  .line-seprator {
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    margin: 4vw 0;
+  }
+
+  .part1-div {
+    width: 100%;
+    padding: 1vw 5vw;
+
+    display: flex;
+    gap: 3vw;
+    position: relative;
+
+    #container-olgaPrudka {
+
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vw;
+
+      h1 {
+        font-size: 2.5vw;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .short-project-dtl {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+          width: 70%;
+        }
+
+        h5 {
+          font-size: 0.75vw;
+        }
+      }
+
+      .line-seprator {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin: 0.5vw 0;
+      }
+    }
+
+    #container-aim {
+      @extend #container-olgaPrudka;
+      width: 35%;
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+    .downward-arrow {
+
+      width: 20vw;
+      height: 20vw;
+      border: 1px solid white;
+      border-radius: 100%;
+      
+      //aligining the item
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+
+      //aligining the item inside the circle at center position
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 8vw;
+        font-weight: 100;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+      }
+    }
+  }
+
+  .part2-div {
+    width: 100%;
+    padding: 1vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+
+    .downward-arrow {
+
+      width: 20vw;
+      height: 20vw;
+      border: 1px solid white;
+      border-radius: 100%;
+      
+      // //aligining the item
+      // position: absolute;
+      // left: 5%;
+      // top: 5%;
+
+      // //aligining the item inside the circle at center position
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 8vw;
+        font-weight: 100;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+      }
+    }
+
+    #container-ochi {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vw;
+      margin-top: 5%;
+      h1 {
+        font-size: 2.5vw;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .short-project-dtl {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+          width: 70%;
+        }
+
+        h5 {
+          font-size: 0.75vw;
+        }
+      }
+
+      
+      .line-seprator {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin: 0.5vw 0;
+      }
+    }
+
+    #container-davidLaxer{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vw;
+
+      h1 {
+        font-size: 2.5vw;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .short-project-dtl {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+          width: 70%;
+        }
+
+        h5 {
+          font-size: 0.75vw;
+        }
+      }
+
+      
+      .line-seprator {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin: 0.5vw 0;
+      }
+    }
+  }
+
+  .part3-div {
+    width: 100%;
+    padding: 1vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+
+    #container-Eminente {
+      width: 22%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vw;
+      margin-top: -12.5%;
+    
+      h1 {
+        font-size: 2.5vw;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .short-project-dtl {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+          width: 70%;
+        }
+
+        h5 {
+          font-size: 0.75vw;
+        }
+      }
+
+      
+      .line-seprator {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin: 0.5vw 0;
+      }
+    }
+
+    .downward-arrow {
+
+      width: 20vw;
+      height: 20vw;
+      border: 1px solid white;
+      border-radius: 100%;
+      
+      // //aligining the item
+      // position: absolute;
+      // left: 5%;
+      // top: 5%;
+
+      // //aligining the item inside the circle at center position
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: auto;
+
+      i {
+        font-size: 8vw;
+        font-weight: 100;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+      }
+    }
+
+    #container-makhno {
+      
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vw;
+      h1 {
+        font-size: 2.5vw;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .short-project-dtl {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+          width: 70%;
+        }
+
+        h5 {
+          font-size: 0.75vw;
+        }
+      }
+
+      
+      .line-seprator {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin: 0.5vw 0;
+      }
+    }
+  }
+
+  .finalCircle {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5%;
+    margin-left: -10%;
+
+    .downward-arrow {
+
+      width: 20vw;
+      height: 20vw;
+      border-radius: 100%;
+      
+      //aligining the item
+      // position: absolute;
+      // left: 5%;
+      // bottom: 5%;
+  
+      // //aligining the item inside the circle at center position
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      margin-top: auto;
+
+      background-color: #FFA63D;
+
+
+      span {
+        font-family: 'Silk Serif';
+      }
+    }
+  }
+}
+
+#about {
+  width: 75%;
+  margin-left: auto;
+  margin-top: 5%;
+  font-family: "Plain Light";
+  h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    line-height: 7vw;
+  }
+
+  .line-seprator {
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    margin: 4vw 0;
+  }
+
+  #about-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    position: relative;
+
+    p {
+      width: 50%;
+      font-size: 2vw;
+    }
+
+    .about-container {
+      width: 100%;
+
+      display: flex;
+      gap: 1vw;
+      img {
+        width: 50%;
+        object-fit: cover;
+      }
+
+      p {
+        width: 22%;
+        font-size: 1vw;
+      }
+    }
+
+    #workdetails {
+      width: 45%;
+      position: absolute;
+      bottom: -20%;
+      right: 20%;
+      padding: 1vw;
+      background-color: #3f7df4;
+      padding: 2.5vw;
+      .container {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        padding: 2vw 0;
+        // border: 1px solid;
+        // display: none;
+
+        h1 {
+          font-size: 1.25vw;
+          font-weight: 300;
+          line-height: 1.25vw;
+          text-transform: initial;
+        }
+
+        p {
+          font-size: 0.9vw;
+        }
+      }
+    }
+  }
+}
+
+#weWork {
+  margin-top: 20%;
+  width: 100%;
+  font-family: "Plain Light";
+
+  #weWorkHeader {
+    width: 75%;
+    margin-left: auto;
+    margin-bottom: 5%;
+    .line-seprator {
+      width: 95%;
+      height: 1px;
+      background-color: white;
+      margin: 4vw 0 1vw 0;
+    }
+  }
+
+  #marqueeAnimation {
+    width: 100%;
+
+    .marquee-container {
+      white-space: nowrap;
+      h1 {
+        display: inline-block;
+        font-size: 6vw;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        font-weight: 100;
+
+        animation-name: marqueeAnimation;
+        animation-duration: 15s;
+        animation-delay: -1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+
+    .marquee-container2 {
+      @extend .marquee-container;
+
+      h1 {
+        animation-name: marqueeAnimation;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: reverse;
+      }
+    }
+  }
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(calc(-100% - 10px));
+  }
+}
+
+footer {
+  width: 75%;
+  margin-left: auto;
+  margin-top: 5%;
+  font-family: "Plain Light";
+
+  h1 {
+    font-size: 7vw;
+    height: 15vh;
+    text-transform: uppercase;
+  }
+
+  h1:hover {
+    font-family: "silk serif";
+    font-weight: 100;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+
+  .line-seprator {
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    margin: 4vw 0;
+  }
+
+  .footer-details {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+
+    #social,
+    #Address,
+    #SayHi {
+      display: flex;
+      flex-direction: column;
+      gap: 1vw;
+      h6 {
+        font-size: 1vw;
+        font-weight: 400;
+      }
+
+      h5 {
+        font-size: 1.5vw;
+        font-weight: 400;
+      }
+
+      a {
+        font-size: 1.5vw;
+      }
+    }
+
+    #social {
+      margin-right: 15vw;
+      h6 {
+        margin-bottom: 1vw;
+      }
+
+      h5 {
+        margin-top: -15%;
+      }
+    }
+
+    #Address {
+      width: 100%;
+      h5 {
+        width: 75%;
+      }
+    }
+  }
+
+  #createdBy {
+    display: flex;
+    justify-content: space-between;
+
+    width: 70%;
+    margin-top: -2%;
+    padding: 0 0 3vw 0;
+
+    #left-div {
+      display: flex;
+      justify-content: space-between;
+      gap: 1vw;
+
+      h5 {
+        font-size: 1vw;
+        font-weight: 400;
+      }
+
+      h6 {
+        font-size: 1vw;
+        font-weight: 200;
+        opacity: 0.7;
+      }
+    }
+
+    #right-div {
+
+      h5 {
+        font-size: 1vw;
+        font-weight: 200;
+      }
+    }
+  }
+}
