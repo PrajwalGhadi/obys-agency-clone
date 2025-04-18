@@ -231,9 +231,10 @@ main {
   position: relative;
 }
 #ourProject .part1-div #container-olgaPrudka, #ourProject .part1-div #container-aim {
-  width: 25%;
+  width: 22%;
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 1.5vw;
 }
 #ourProject .part1-div #container-olgaPrudka h1, #ourProject .part1-div #container-aim h1 {
@@ -241,8 +242,18 @@ main {
   text-align: left;
   text-transform: uppercase;
 }
-#ourProject .part1-div #container-olgaPrudka img, #ourProject .part1-div #container-aim img {
+#ourProject .part1-div #container-olgaPrudka .image-div, #ourProject .part1-div #container-aim .image-div {
+  width: 20vw;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+}
+#ourProject .part1-div #container-olgaPrudka .image-div img, #ourProject .part1-div #container-aim .image-div img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 #ourProject .part1-div #container-olgaPrudka .short-project-dtl, #ourProject .part1-div #container-aim .short-project-dtl {
   width: 100%;
@@ -262,10 +273,20 @@ main {
   margin: 0.5vw 0;
 }
 #ourProject .part1-div #container-aim {
-  width: 35%;
+  width: 33%;
 }
-#ourProject .part1-div #container-aim img {
+#ourProject .part1-div #container-aim .image-div {
+  width: 30vw;
+  height: 35vw;
+  position: relative;
+  overflow: hidden;
+}
+#ourProject .part1-div #container-aim .image-div img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 #ourProject .part1-div .downward-arrow {
   width: 20vw;
@@ -278,12 +299,30 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all ease-in-out 1s;
 }
 #ourProject .part1-div .downward-arrow i {
   font-size: 8vw;
   font-weight: 100;
   -webkit-text-stroke: 1px white;
   color: transparent;
+}
+#ourProject .part1-div .downward-arrow p {
+  display: none;
+  width: 60%;
+  text-align: center;
+  scale: 0;
+}
+#ourProject .part1-div .downward-arrow:hover {
+  background-color: white;
+}
+#ourProject .part1-div .downward-arrow:hover i {
+  display: none;
+}
+#ourProject .part1-div .downward-arrow:hover p {
+  display: initial;
+  color: black;
+  scale: 1;
 }
 #ourProject .part2-div {
   width: 100%;
@@ -300,6 +339,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all ease-in-out 1s;
 }
 #ourProject .part2-div .downward-arrow i {
   font-size: 8vw;
@@ -307,8 +347,25 @@ main {
   -webkit-text-stroke: 1px white;
   color: transparent;
 }
+#ourProject .part2-div .downward-arrow p {
+  display: none;
+  width: 60%;
+  text-align: center;
+  scale: 0;
+}
+#ourProject .part2-div .downward-arrow:hover {
+  background-color: white;
+}
+#ourProject .part2-div .downward-arrow:hover i {
+  display: none;
+}
+#ourProject .part2-div .downward-arrow:hover p {
+  display: initial;
+  color: black;
+  scale: 1;
+}
 #ourProject .part2-div #container-ochi {
-  width: 40%;
+  width: 34%;
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
@@ -319,8 +376,18 @@ main {
   text-align: left;
   text-transform: uppercase;
 }
-#ourProject .part2-div #container-ochi img {
+#ourProject .part2-div #container-ochi .image-div {
+  width: 30vw;
+  height: 40vw;
+  position: relative;
+  overflow: hidden;
+}
+#ourProject .part2-div #container-ochi .image-div img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 #ourProject .part2-div #container-ochi .short-project-dtl {
   width: 100%;
@@ -340,7 +407,7 @@ main {
   margin: 0.5vw 0;
 }
 #ourProject .part2-div #container-davidLaxer {
-  width: 40%;
+  width: 34%;
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
@@ -350,8 +417,18 @@ main {
   text-align: left;
   text-transform: uppercase;
 }
-#ourProject .part2-div #container-davidLaxer img {
+#ourProject .part2-div #container-davidLaxer .image-div {
+  width: 30vw;
+  height: 40vw;
+  position: relative;
+  overflow: hidden;
+}
+#ourProject .part2-div #container-davidLaxer .image-div img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 #ourProject .part2-div #container-davidLaxer .short-project-dtl {
   width: 100%;
@@ -378,7 +455,7 @@ main {
   gap: 2vw;
 }
 #ourProject .part3-div #container-Eminente {
-  width: 22%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
@@ -389,8 +466,18 @@ main {
   text-align: left;
   text-transform: uppercase;
 }
-#ourProject .part3-div #container-Eminente img {
+#ourProject .part3-div #container-Eminente .image-div {
+  width: 22.5vw;
+  height: 27.5vw;
+  position: relative;
+  overflow: hidden;
+}
+#ourProject .part3-div #container-Eminente .image-div img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 #ourProject .part3-div #container-Eminente .short-project-dtl {
   width: 100%;
@@ -418,12 +505,30 @@ main {
   align-items: center;
   justify-content: center;
   margin-top: auto;
+  transition: all ease-in-out 1s;
 }
 #ourProject .part3-div .downward-arrow i {
   font-size: 8vw;
   font-weight: 100;
   -webkit-text-stroke: 1px white;
   color: transparent;
+}
+#ourProject .part3-div .downward-arrow p {
+  display: none;
+  width: 60%;
+  text-align: center;
+  scale: 0;
+}
+#ourProject .part3-div .downward-arrow:hover {
+  background-color: white;
+}
+#ourProject .part3-div .downward-arrow:hover i {
+  display: none;
+}
+#ourProject .part3-div .downward-arrow:hover p {
+  display: initial;
+  color: black;
+  scale: 1;
 }
 #ourProject .part3-div #container-makhno {
   width: 35%;
@@ -436,8 +541,18 @@ main {
   text-align: left;
   text-transform: uppercase;
 }
-#ourProject .part3-div #container-makhno img {
+#ourProject .part3-div #container-makhno .image-div {
+  width: 31vw;
+  height: 40vw;
+  position: relative;
+  overflow: hidden;
+}
+#ourProject .part3-div #container-makhno .image-div img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 #ourProject .part3-div #container-makhno .short-project-dtl {
   width: 100%;
@@ -687,4 +802,9 @@ footer #createdBy #left-div h6 {
 footer #createdBy #right-div h5 {
   font-size: 1vw;
   font-weight: 200;
+}
+
+._canvas_container {
+  z-index: 999999 !important;
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */

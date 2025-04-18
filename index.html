@@ -4,15 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OBYS AGENCY CLONE FINAL PROJECT</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -179,11 +172,19 @@
         </div>
 
         <div class="part1-div">
-
           <div id="container-olgaPrudka">
             <h1>Olga Prudka</h1>
 
-            <img src="https://obys.agency/wp-content/uploads/2023/08/Olga_Prudka_1.png" alt="">
+            <div class="image-div">
+              <img
+                src="./assets/Olga_Prudka_1.png"
+                alt=""
+              />
+              <img
+                src="./assets/Olga_Prudka_2.png"
+                alt=""
+              />
+            </div>
 
             <div class="short-project-dtl">
               <p>Logo design, Website design, Development</p>
@@ -197,7 +198,18 @@
           <div id="container-aim">
             <h1>Aim</h1>
 
-            <img src="https://obys.agency/wp-content/uploads/2024/02/AIM-1.png" alt="">
+            <div class="image-div">
+
+              <img
+                src="./assets/AIM-1.png"
+                alt=""
+              />
+
+              <img
+                src="./assets/AIM-2.png"
+                alt=""
+              />
+            </div>
 
             <div class="short-project-dtl">
               <p>Logo design, Website design, Development</p>
@@ -210,21 +222,32 @@
 
           <div class="downward-arrow">
             <i class="ri-arrow-down-line"></i>
-          </div>
 
+            <p>We are thrilled to enrolled on board. We hope you enjoy the projects ❤️</p>
+          </div>
         </div>
 
         <div class="part2-div">
-
           <div class="downward-arrow">
             <i class="ri-arrow-right-down-line"></i>
+            <p>It will make you WOW! 😉</p>
           </div>
 
           <div id="container-ochi">
             <h1>Ochi</h1>
 
-            <img src="https://obys.agency/wp-content/uploads/2022/06/OCHI.png" alt="">
+            <div class="image-div">
 
+              <img
+                src="./assets/OCHI.png"
+                alt=""
+              />
+
+              <img
+                src="./assets/OCHI_2-1.png"
+                alt=""
+              />
+            </div>
             <div class="short-project-dtl">
               <p>Logo design, Website design, Development</p>
 
@@ -237,7 +260,18 @@
           <div id="container-davidLaxer">
             <h1>David Laxer</h1>
 
-            <img src="https://obys.agency/wp-content/uploads/2023/08/Laxer_1-2.png" alt="">
+            <div class="image-div">
+
+              <img
+                src="./assets/Laxer_1-2.png"
+                alt=""
+              />
+
+              <img
+                src="./assets/Laxer_2.png"
+                alt=""
+              />
+            </div>
 
             <div class="short-project-dtl">
               <p>Logo design, Website design, Development</p>
@@ -247,16 +281,24 @@
 
             <div class="line-seprator"></div>
           </div>
-
-
         </div>
 
         <div class="part3-div">
-
           <div id="container-Eminente">
             <h1>Éminente</h1>
 
-            <img src="https://obys.agency/wp-content/uploads/2023/11/%C3%89minente_First.png" alt="">
+            <div class="image-div">
+
+              <img
+                src="./assets/Éminente_First.png"
+                alt=""
+              />
+
+              <img
+                src="./assets/Éminente_Second.png"
+                alt=""
+              />
+            </div>
 
             <div class="short-project-dtl">
               <p>Logo design, Website design, Development</p>
@@ -267,16 +309,26 @@
             <div class="line-seprator"></div>
           </div>
 
-
           <div class="downward-arrow">
             <i class="ri-arrow-right-line"></i>
+            <p>We like its color pallete 🎨</p>
           </div>
-
 
           <div id="container-makhno">
             <h1>David Laxer</h1>
 
-            <img src="https://obys.agency/wp-content/uploads/2023/12/Makhno_First.png" alt="">
+            <div class="image-div">
+
+              <img
+                src="./assets/Makhno_First.png"
+                alt=""
+              />
+
+              <img
+                src="./assets/Makhno_Hover.png"
+                alt=""
+              />
+            </div>
 
             <div class="short-project-dtl">
               <p>Logo design, Website design, Development</p>
@@ -420,24 +472,19 @@
       </footer>
     </main>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
-      integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
-      integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"
-    ></script>
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
 
     <script src="scripts.js"></script>
   </body>
