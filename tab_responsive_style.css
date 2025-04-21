@@ -1,0 +1,244 @@
+@media (max-width: 1030px) {
+  .loader {
+    padding: 10vw 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .loader .line .counter h5 {
+    font-weight: 200;
+    font-family: "silk serif";
+    font-style: normal;
+  }
+  .loader .line .counter #nowText {
+    font-size: 8vw;
+    font-weight: 100;
+  }
+  #nav-hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #nav-hero #hero {
+    margin-top: 50%;
+  }
+  #ourProject .ourProject-title h1 {
+    font-size: 8vw;
+  }
+  #ourProject .part1-div {
+    justify-content: space-between;
+    gap: 3vw;
+  }
+  #ourProject .part1-div #container-olgaPrudka {
+    width: 100%;
+    gap: 2vw;
+  }
+  #ourProject .part1-div #container-olgaPrudka h1 {
+    font-size: 4vw;
+  }
+  #ourProject .part1-div #container-olgaPrudka .image-div {
+    width: 100%;
+    height: 70vw;
+  }
+  #ourProject .part1-div #container-olgaPrudka .short-project-dtl h5 {
+    font-size: 2vw;
+  }
+  #ourProject .part1-div #container-aim {
+    width: 100%;
+    gap: 2vw;
+  }
+  #ourProject .part1-div #container-aim h1 {
+    font-size: 4vw;
+  }
+  #ourProject .part1-div #container-aim .image-div {
+    width: 100%;
+    height: 70vw;
+  }
+  #ourProject .part1-div #container-aim .short-project-dtl h5 {
+    font-size: 2vw;
+  }
+  #ourProject .part1-div .downward-arrow {
+    display: none;
+  }
+  #ourProject .part2-div {
+    gap: 3vw;
+  }
+  #ourProject .part2-div .downward-arrow {
+    display: none;
+  }
+  #ourProject .part2-div #container-ochi {
+    margin-top: 0%;
+    width: 100%;
+    gap: 2vw;
+  }
+  #ourProject .part2-div #container-ochi h1 {
+    font-size: 4vw;
+  }
+  #ourProject .part2-div #container-ochi .image-div {
+    width: 100%;
+    height: 70vw;
+  }
+  #ourProject .part2-div #container-ochi .short-project-dtl h5 {
+    font-size: 2vw;
+  }
+  #ourProject .part2-div #container-davidLaxer {
+    width: 100%;
+    gap: 2vw;
+  }
+  #ourProject .part2-div #container-davidLaxer h1 {
+    font-size: 4vw;
+  }
+  #ourProject .part2-div #container-davidLaxer .image-div {
+    width: 100%;
+    height: 70vw;
+  }
+  #ourProject .part2-div #container-davidLaxer .short-project-dtl h5 {
+    font-size: 2vw;
+  }
+  #ourProject .part3-div {
+    gap: 3vw;
+  }
+  #ourProject .part3-div #container-Eminente {
+    margin-top: 0%;
+    width: 100%;
+    gap: 2vw;
+  }
+  #ourProject .part3-div #container-Eminente h1 {
+    font-size: 4vw;
+  }
+  #ourProject .part3-div #container-Eminente .image-div {
+    width: 100%;
+    height: 70vw;
+  }
+  #ourProject .part3-div #container-Eminente .short-project-dtl h5 {
+    font-size: 2vw;
+  }
+  #ourProject .part3-div .downward-arrow {
+    display: none;
+  }
+  #ourProject .part3-div #container-makhno {
+    margin-top: 0%;
+    width: 100%;
+    gap: 2vw;
+  }
+  #ourProject .part3-div #container-makhno h1 {
+    font-size: 4vw;
+  }
+  #ourProject .part3-div #container-makhno .image-div {
+    width: 100%;
+    height: 70vw;
+  }
+  #ourProject .part3-div #container-makhno .short-project-dtl h5 {
+    font-size: 2vw;
+  }
+  #ourProject .finalCircle {
+    margin: 15vw 0 25vw 0;
+  }
+  #ourProject .finalCircle .downward-arrow {
+    width: 30vw;
+    height: 30vw;
+  }
+  #about h1 {
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+  #about .line-seprator {
+    margin: 4vw 0 6vw 0;
+  }
+  #about #about-details {
+    gap: 5vw;
+  }
+  #about #about-details p {
+    width: 85%;
+    font-size: 3.5vw;
+  }
+  #about #about-details .about-container {
+    gap: 4vw;
+  }
+  #about #about-details .about-container img {
+    width: 50%;
+    aspect-ratio: 1/1;
+  }
+  #about #about-details .about-container p {
+    width: 100%;
+    font-size: 2vw;
+  }
+  #about #about-details #workdetails {
+    width: 75%;
+    bottom: -60%;
+    right: 5%;
+    padding: 5vw;
+  }
+  #about #about-details #workdetails .container {
+    padding: 2.5vw 0;
+  }
+  #about #about-details #workdetails .container h1 {
+    width: 100%;
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+  #about #about-details #workdetails .container p {
+    width: 100%;
+    font-size: 1.75vw;
+  }
+  #weWork {
+    margin-top: 60%;
+  }
+  footer {
+    margin-top: 20%;
+  }
+  footer h1 {
+    font-size: 8vw;
+    height: 10vh;
+  }
+  footer .footer-details {
+    width: 90%;
+  }
+  footer .footer-details #social h6,
+  footer .footer-details #Address h6,
+  footer .footer-details #SayHi h6 {
+    font-size: 2vw;
+    margin-bottom: 3vw;
+  }
+  footer .footer-details #social h5,
+  footer .footer-details #Address h5,
+  footer .footer-details #SayHi h5 {
+    font-size: 3vw;
+  }
+  footer .footer-details #social a,
+  footer .footer-details #Address a,
+  footer .footer-details #SayHi a {
+    font-size: 3vw;
+  }
+  footer .footer-details #social {
+    width: 100%;
+    margin-right: 0vw;
+  }
+  footer .footer-details #social h5 {
+    margin-top: 0%;
+  }
+  footer .footer-details #Address {
+    width: 100%;
+  }
+  footer .footer-details #Address h5 {
+    width: 90%;
+  }
+  footer .footer-details #SayHi {
+    width: 100%;
+  }
+  footer #createdBy {
+    width: 90%;
+  }
+  footer #createdBy #left-div {
+    align-items: center;
+  }
+  footer #createdBy #left-div h5 {
+    font-size: 2vw;
+  }
+  footer #createdBy #left-div h6 {
+    font-size: 2vw;
+  }
+  footer #createdBy #right-div h5 {
+    font-size: 2vw;
+  }
+}/*# sourceMappingURL=tab_responsive_style.css.map */

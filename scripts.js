@@ -1,7 +1,7 @@
 function loaderAnimation() {
   let tl = gsap.timeline();
 
-  tl.from(".line h1", {
+  tl.from(".line h1, .line .counter h5", {
     y: 200,
     stagger: 0.25,
     opacity: 0,
@@ -74,6 +74,8 @@ function SheryiAnimation () {
 }
 
 
+function VideoContainerAnimation () {
+  
 let video_Container = document.querySelector('#video-container');
 
 video_Container.addEventListener('mouseenter', () => {
@@ -112,8 +114,12 @@ video_Container.addEventListener('mouseenter', () => {
   console.log(flag)
 })
 
+}
+
+
 
 loaderAnimation()
 // cursorAnimation()
 heroPageAnimation()
 SheryiAnimation()
+VideoContainerAnimation();

@@ -102,6 +102,7 @@ main {
   position: relative;
   overflow-x: hidden;
   background-color: #151515;
+  // display: none;
 }
 
 #cursor {
@@ -257,7 +258,7 @@ main {
   }
 
   .line-seprator {
-    width: 90%;
+    width: 95%;
     height: 1px;
     background-color: white;
     margin: 4vw 0;

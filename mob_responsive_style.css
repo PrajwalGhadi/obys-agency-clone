@@ -1,0 +1,364 @@
+@media (max-width: 760px) {
+  main {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #151515;
+  }
+  #cursor {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid white;
+    background-color: transparent;
+    z-index: 5;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    display: none;
+  }
+  #nav-hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #nav-hero nav {
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+  }
+  #nav-hero nav .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #nav-hero nav .nav-links {
+    display: none;
+  }
+  #nav-hero #hero {
+    width: 95%;
+    margin-left: auto;
+    margin-top: 25%;
+  }
+  #nav-hero #hero .centerText h1 {
+    font-size: 9vw;
+    line-height: 10vw;
+  }
+  #nav-hero #hero .webTextAnimation {
+    border-bottom: 0.5vw solid white;
+    padding-bottom: 1vw;
+    width: 20%;
+    margin-right: 7%;
+  }
+  #nav-hero #hero .graphicTextAnimation {
+    border-bottom: 0.5vw solid white;
+    padding-bottom: 1vw;
+  }
+  #nav-hero #hero .webTextAnimation:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-weight: 100;
+    border-bottom: none;
+  }
+  #nav-hero #hero .graphicTextAnimation:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-weight: 100;
+    border-bottom: none;
+  }
+  #nav-hero #hero-section-video {
+    width: 100%;
+    padding: 5vw;
+    margin: 25% 0;
+  }
+  #nav-hero #hero-section-video #video-container {
+    width: 100%;
+    height: 80vw;
+  }
+  #nav-hero #hero-section-video #video-container img {
+    width: 100%;
+    height: 100%;
+  }
+  #nav-hero #hero-section-video #video-container #video-cursor {
+    width: 8vw;
+    height: 8vw;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #nav-hero #hero-section-video #video-container video {
+    height: 100%;
+  }
+  #ourProject {
+    width: 100%;
+    font-family: "Plain Light";
+  }
+  #ourProject .ourProject-title {
+    width: 95%;
+    margin-left: auto;
+  }
+  #ourProject .ourProject-title h1 {
+    font-size: 9vw;
+    text-transform: uppercase;
+  }
+  #ourProject .line-seprator {
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    margin: 4vw 0;
+  }
+  #ourProject .part1-div {
+    width: 100%;
+    flex-direction: column;
+  }
+  #ourProject .part1-div #container-olgaPrudka, #ourProject .part1-div #container-aim {
+    width: 100%;
+    height: 140vw;
+  }
+  #ourProject .part1-div #container-olgaPrudka h1, #ourProject .part1-div #container-aim h1 {
+    font-size: 6vw;
+  }
+  #ourProject .part1-div #container-olgaPrudka .image-div, #ourProject .part1-div #container-aim .image-div {
+    width: 100%;
+    height: 125vw;
+  }
+  #ourProject .part1-div #container-olgaPrudka .short-project-dtl h5, #ourProject .part1-div #container-aim .short-project-dtl h5 {
+    font-size: 4vw;
+  }
+  #ourProject .part1-div #container-aim {
+    width: 100%;
+    height: 140vw;
+  }
+  #ourProject .part1-div #container-aim .image-div {
+    width: 100%;
+    height: 125vw;
+  }
+  #ourProject .part1-div .downward-arrow {
+    display: none;
+  }
+  #ourProject .part2-div {
+    width: 100%;
+    flex-direction: column;
+  }
+  #ourProject .part2-div .downward-arrow {
+    display: none;
+  }
+  #ourProject .part2-div #container-ochi {
+    width: 100%;
+    height: 140vw;
+  }
+  #ourProject .part2-div #container-ochi h1 {
+    font-size: 6vw;
+  }
+  #ourProject .part2-div #container-ochi .image-div {
+    width: 100%;
+    height: 125vw;
+  }
+  #ourProject .part2-div #container-ochi .short-project-dtl h5 {
+    font-size: 4vw;
+  }
+  #ourProject .part2-div #container-davidLaxer {
+    width: 100%;
+    height: 140vw;
+  }
+  #ourProject .part2-div #container-davidLaxer h1 {
+    font-size: 6vw;
+  }
+  #ourProject .part2-div #container-davidLaxer .image-div {
+    width: 100%;
+    height: 125vw;
+  }
+  #ourProject .part2-div #container-davidLaxer .short-project-dtl h5 {
+    font-size: 4vw;
+  }
+  #ourProject .part3-div {
+    width: 100%;
+    flex-direction: column;
+  }
+  #ourProject .part3-div #container-Eminente {
+    width: 100%;
+    height: 140vw;
+    margin-top: 5%;
+  }
+  #ourProject .part3-div #container-Eminente h1 {
+    font-size: 6vw;
+  }
+  #ourProject .part3-div #container-Eminente .image-div {
+    width: 100%;
+    height: 125vw;
+  }
+  #ourProject .part3-div #container-Eminente .short-project-dtl h5 {
+    font-size: 4vw;
+  }
+  #ourProject .part3-div .downward-arrow {
+    display: none;
+  }
+  #ourProject .part3-div #container-makhno {
+    width: 100%;
+    height: 140vw;
+  }
+  #ourProject .part3-div #container-makhno h1 {
+    font-size: 6vw;
+  }
+  #ourProject .part3-div #container-makhno .image-div {
+    width: 100%;
+    height: 125vw;
+  }
+  #ourProject .part3-div #container-makhno .short-project-dtl h5 {
+    font-size: 4vw;
+  }
+  #ourProject .finalCircle {
+    margin: 20% 0%;
+  }
+  #ourProject .finalCircle .downward-arrow {
+    width: 35vw;
+    height: 35vw;
+  }
+  #ourProject .finalCircle .downward-arrow span {
+    font-style: italic;
+  }
+  #about {
+    width: 95%;
+    margin-top: 10%;
+    padding-right: 5vw;
+  }
+  #about h1 {
+    font-size: 9vw;
+    line-height: 10vw;
+  }
+  #about #about-details {
+    width: 100%;
+    gap: 5vw;
+  }
+  #about #about-details p {
+    width: 90%;
+    font-size: 5.5vw;
+  }
+  #about #about-details .about-container {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 5vw;
+  }
+  #about #about-details .about-container img {
+    width: 100%;
+  }
+  #about #about-details .about-container p {
+    width: 70%;
+    font-size: 3.25vw;
+  }
+  #about #about-details #workdetails {
+    width: 100%;
+    position: initial;
+    bottom: 0%;
+    right: 0%;
+    padding: 5vw 0 15vw 5vw;
+  }
+  #about #about-details #workdetails .container {
+    padding: 5vw 0;
+  }
+  #about #about-details #workdetails .container h1 {
+    width: 100%;
+    font-size: 4vw;
+  }
+  #about #about-details #workdetails .container p {
+    width: 100%;
+    font-size: 3vw;
+  }
+  #weWork {
+    margin-top: 20%;
+  }
+  #weWork #weWorkHeader {
+    width: 95%;
+  }
+  footer {
+    width: 95%;
+    margin-left: auto;
+    margin-top: 5%;
+    font-family: "Plain Light";
+  }
+  footer h1 {
+    font-size: 9vw;
+    height: 5vw;
+    text-transform: uppercase;
+  }
+  footer h1:hover {
+    font-family: "silk serif";
+    font-weight: 100;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+  footer .line-seprator {
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    margin: 10vw 0;
+  }
+  footer .footer-details {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7vw;
+  }
+  footer .footer-details #social h6,
+  footer .footer-details #Address h6,
+  footer .footer-details #SayHi h6 {
+    font-size: 2.5vw;
+    margin-bottom: 3vw;
+  }
+  footer .footer-details #social h5,
+  footer .footer-details #Address h5,
+  footer .footer-details #SayHi h5 {
+    font-size: 3.5vw;
+  }
+  footer .footer-details #social a,
+  footer .footer-details #Address a,
+  footer .footer-details #SayHi a {
+    font-size: 3.5vw;
+  }
+  footer .footer-details #social {
+    width: 100%;
+    margin-right: 0vw;
+  }
+  footer .footer-details #social h5 {
+    margin-top: 0%;
+  }
+  footer .footer-details #Address {
+    width: 100%;
+  }
+  footer .footer-details #Address h5 {
+    width: 90%;
+  }
+  footer .footer-details #SayHi {
+    width: 100%;
+  }
+  footer #createdBy {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: -2%;
+    padding: 0 0 3vw 0;
+  }
+  footer #createdBy #left-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+  }
+  footer #createdBy #left-div h5 {
+    font-size: 3vw;
+    font-weight: 400;
+  }
+  footer #createdBy #left-div h6 {
+    font-size: 2.25vw;
+    font-weight: 200;
+    opacity: 0.7;
+  }
+  footer #createdBy #right-div h5 {
+    font-size: 3vw;
+    font-weight: 200;
+  }
+}/*# sourceMappingURL=mob_responsive_style.css.map */

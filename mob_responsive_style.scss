@@ -1,0 +1,470 @@
+@media (max-width: 760px) {
+  main {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #151515;
+  }
+
+  #cursor {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid white;
+    background-color: transparent;
+    z-index: 5;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    mix-blend-mode: difference;
+
+    display: none;
+  }
+
+  #nav-hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    nav {
+        width: 100%; //changed
+        position: fixed;
+        z-index: 9999999;
+      .logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    #hero {
+      width: 95%;
+      margin-left: auto;
+      margin-top: 25%;
+      .centerText {
+        h1 {
+          font-size: 9vw;
+          line-height: 10vw;
+        }
+      }
+
+      // Hover Text Styling
+      .webTextAnimation {
+        border-bottom: 0.5vw solid white;
+        padding-bottom: 1vw;
+        width: 20%;
+        margin-right: 7%;
+      }
+
+      .graphicTextAnimation {
+        border-bottom: 0.5vw solid white;
+        padding-bottom: 1vw;
+      }
+
+      .webTextAnimation:hover {
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        font-weight: 100;
+        border-bottom: none;
+      }
+
+      .graphicTextAnimation:hover {
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        font-weight: 100;
+        border-bottom: none;
+      }
+    }
+
+    #hero-section-video {
+      width: 100%;
+      padding: 5vw; //changed
+      margin: 25% 0;  //changed
+  
+
+      #video-container {
+        width: 100%;  //changed
+        height: 80vw; //changed
+
+        img {
+          width: 100%;
+          height: 100%; // chaged
+        }
+
+        #video-cursor {
+          width: 8vw; //changed
+          height: 8vw;  //changed
+          
+          top: 50%; //changed
+          right: 50%; //changed
+          transform: translate(-50%, -50%); //changed
+
+          display: flex;  //changed
+          align-items: center;  //changed
+          justify-content: center;  //changed
+        }
+
+        video {
+          height: 100%; //changed
+        }
+      }
+    }
+  }
+
+  #ourProject {
+    width: 100%;
+    font-family: "Plain Light";
+
+    .ourProject-title {
+      width: 95%;
+      margin-left: auto;
+
+      h1 {
+        font-size: 9vw;
+        text-transform: uppercase;
+      }
+    }
+
+    .line-seprator {
+      width: 95%;
+      height: 1px;
+      background-color: white;
+      margin: 4vw 0;
+    }
+
+    .part1-div {
+      width: 100%;
+      flex-direction: column; //changed
+
+
+      #container-olgaPrudka {
+        width: 100%; //changed
+        height: 140vw; //changed
+
+        h1 {
+          font-size: 6vw; //Changed
+        }
+
+        .image-div {
+          width: 100%; //changed
+          height: 125vw; //changed
+
+        }
+
+        .short-project-dtl {
+          h5 {
+            font-size: 4vw; //changed
+          }
+        }
+      }
+
+      #container-aim {
+        @extend #container-olgaPrudka;
+        width: 100%; //changed
+        height: 140vw; //changed
+
+        .image-div {
+          width: 100%; //changed
+          height: 125vw; //changed
+        }
+      }
+
+      .downward-arrow {
+        display: none;
+      }
+    }
+
+    .part2-div {
+      width: 100%;
+      flex-direction: column; //changed
+
+      .downward-arrow {
+        display: none;
+      }
+
+      #container-ochi {
+        width: 100%; //changed
+        height: 140vw; //changed
+
+        h1 {
+          font-size: 6vw; //changed
+        }
+
+        .image-div {
+          width: 100%; //changed
+          height: 125vw; //changed
+        }
+
+        .short-project-dtl {
+          h5 {
+            font-size: 4vw; //changed
+          }
+        }
+      }
+
+      #container-davidLaxer {
+        width: 100%; //changed
+        height: 140vw; //changed
+
+        h1 {
+          font-size: 6vw; //changed
+        }
+
+        .image-div {
+          width: 100%; //changed
+          height: 125vw; //changed
+        }
+
+        .short-project-dtl {
+          h5 {
+            font-size: 4vw;
+          }
+        }
+      }
+    }
+
+    .part3-div {
+      width: 100%;
+      flex-direction: column;
+
+      #container-Eminente {
+        width: 100%; //changed
+        height: 140vw; //changed
+        margin-top: 5%; //changed
+
+        h1 {
+          font-size: 6vw; //changed
+        }
+
+        .image-div {
+          width: 100%; //changed
+          height: 125vw; //changed
+        }
+
+        .short-project-dtl {
+          h5 {
+            font-size: 4vw;
+          }
+        }
+      }
+
+      .downward-arrow {
+        display: none;
+      }
+
+      #container-makhno {
+        width: 100%; //changed
+        height: 140vw; //changed
+
+        h1 {
+          font-size: 6vw; //changed
+        }
+
+        .image-div {
+          width: 100%; //changed
+          height: 125vw; //changed
+        }
+
+        .short-project-dtl {
+          h5 {
+            font-size: 4vw;
+          }
+        }
+      }
+    }
+
+    .finalCircle {
+      margin: 20% 0%;  //changed
+      .downward-arrow {
+        width: 35vw; //changed
+        height: 35vw; //changed
+
+        span {
+          font-style: italic; //changed
+        }
+      }
+    }
+  }
+
+  #about {
+    width: 95%;  //changed
+    margin-top: 10%;  //changed
+
+    padding-right: 5vw;  //changed
+
+    h1 {
+      font-size: 9vw;  //changed
+      line-height: 10vw; //changed
+    }
+  
+    #about-details {
+      width: 100%; //changed
+      gap: 5vw;  //changed
+  
+      p {
+        width: 90%;  //changed
+        font-size: 5.5vw;  //changed
+      }
+  
+      .about-container {
+        width: 100%;
+
+        flex-direction: column-reverse ; //changed
+        gap: 5vw; //changed
+        img {
+          width: 100%; //changed
+        }
+  
+        p {
+          width: 70%;  //changed
+          font-size: 3.25vw;  //changed
+        }
+      }
+  
+      #workdetails {
+        width: 100%; //changed
+        position: initial;  //changed
+        bottom: 0%;  //changed
+        right: 0%;  //changed
+        padding: 5vw 0 15vw 5vw;  //changed
+        .container {
+        
+          padding: 5vw 0; //changed
+        //   border: 1px solid;
+          // display: none;
+  
+          h1 {
+            width: 100%; //changed
+            font-size: 4vw;  //changed
+            
+        }
+  
+          p {
+            width: 100%;  //changed
+            font-size: 3vw;  //changed
+          }
+        }
+      }
+    }
+  }
+
+  #weWork {
+    margin-top: 20%; //changed
+    #weWorkHeader {
+      width: 95%;  //changed
+    }
+
+  }
+
+  footer {
+    width: 95%;
+    margin-left: auto;
+    margin-top: 5%;
+    font-family: "Plain Light";
+    
+    h1 {
+      font-size: 9vw;
+      height: 5vw;
+      text-transform: uppercase;  
+    }
+  
+    h1:hover {
+      font-family: "silk serif";
+      font-weight: 100;
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+    }
+  
+    .line-seprator {
+      width: 95%;
+      height: 1px;
+      background-color: white;
+      margin: 10vw 0; //changed
+    }
+  
+    .footer-details {
+      width: 90%; //changed
+      flex-direction: column; //chang ed
+      align-items: flex-start; //changed
+      justify-content: center; //changed
+    gap: 7vw;  //changed
+
+    #social,
+    #Address,
+    #SayHi {
+      h6 {
+        font-size: 2.5vw; //changed
+        margin-bottom: 3vw; //changed
+      }
+
+      h5 {
+        font-size: 3.5vw; //changed
+        // margin-bottom: 3vw; //changed
+      }
+
+      a {
+        font-size: 3.5vw; //changed
+      }
+    }
+
+    #social {
+      width: 100%; //newly added
+      margin-right: 0vw; //changed
+
+      h5 {
+        margin-top: 0%; //changed
+      }
+    }
+
+    #Address {
+      width: 100%;
+      h5 {
+        width: 90%; //changed
+      }
+    }
+
+    #SayHi {
+      width: 100%; //changed
+    }
+  }
+  
+    #createdBy {
+      display: flex;
+      justify-content: space-between;
+  
+      width: 90%;
+      margin-top: -2%;
+      padding: 0 0 3vw 0;
+  
+      #left-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1vw;
+  
+        h5 {
+          font-size: 3vw;
+          font-weight: 400;
+        }
+  
+        h6 {
+          font-size: 2.25vw;
+          font-weight: 200;
+          opacity: 0.7;
+        }
+      }
+  
+      #right-div {
+  
+        h5 {
+          font-size: 3vw;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}
