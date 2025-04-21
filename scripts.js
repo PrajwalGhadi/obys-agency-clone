@@ -24,7 +24,7 @@ function loaderAnimation() {
   tl.to(".loader", {
     y: -1600,
     display: "none",
-    delay: 1,
+    delay: 1.5,
   });
 }
 
