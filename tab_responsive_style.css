@@ -19,6 +19,21 @@
     overflow: hidden;
     position: relative;
   }
+  #nav-hero nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -1vw;
+  }
+  #nav-hero nav .logo svg {
+    display: none;
+  }
+  #nav-hero nav .logo a img {
+    width: 25vw;
+  }
+  #nav-hero nav .nav-links a {
+    font-size: 1.75vw;
+  }
   #nav-hero #hero {
     margin-top: 50%;
   }

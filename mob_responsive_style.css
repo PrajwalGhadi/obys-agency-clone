@@ -32,6 +32,12 @@
     align-items: center;
     justify-content: space-between;
   }
+  #nav-hero nav .logo svg {
+    display: initial;
+  }
+  #nav-hero nav .logo a img {
+    width: 30vw;
+  }
   #nav-hero nav .nav-links {
     display: none;
   }

@@ -117,7 +117,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.25vw;
+  gap: -1vw;
+}
+#nav-hero nav .logo svg {
+  display: none;
+}
+#nav-hero nav .logo a img {
+  width: 8vw;
 }
 #nav-hero nav .nav-links {
   display: flex;

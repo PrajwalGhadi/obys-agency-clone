@@ -27,6 +27,35 @@
     overflow: hidden;
     position: relative;
 
+    nav {
+      
+  
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: -1vw;
+  
+        svg {
+          display: none;
+        }
+  
+        a {
+  
+          img {
+            width: 25vw;
+          }
+        }
+      }
+
+      .nav-links {
+      
+        a {
+          font-size: 1.75vw;  //changed
+        }
+      }
+    }
+
     #hero {
       margin-top: 50%; //changed
     }

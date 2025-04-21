@@ -140,7 +140,18 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 2.25vw;
+      gap: -1vw;
+
+      svg {
+        display: none;
+      }
+
+      a {
+
+        img {
+          width: 8vw;
+        }
+      }
     }
 
     .nav-links {
