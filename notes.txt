@@ -41,3 +41,9 @@
                   fill="currentColor"
                 ></path>
               </svg>
+
+
+
+
+   const rect = video_Container.getBoundingClientRect(); // Get container bounds 
+this gives the contianer size in x and y axis respectively             

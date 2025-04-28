@@ -55,6 +55,8 @@ body {
       h5 {
         font-size: 4vw;
         text-align: end;
+        font-weight: 100;
+        -webkit-text-stroke: 1px white;
 
         font-style: italic;
       }
@@ -100,7 +102,6 @@ body {
 
 main {
   position: relative;
-  overflow-x: hidden;
   background-color: #151515;
   // display: none;
 }
@@ -848,12 +849,15 @@ main {
 
     .marquee-container {
       white-space: nowrap;
+      overflow-x:hidden ;
+
       h1 {
         display: inline-block;
         font-size: 6vw;
         -webkit-text-stroke: 1px white;
         color: transparent;
         font-weight: 100;
+        
 
         animation-name: marqueeAnimation;
         animation-duration: 15s;
@@ -879,10 +883,10 @@ main {
 
 @keyframes marqueeAnimation {
   0% {
-    transform: translate(0%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translate(calc(-100% - 10px));
+    transform: translateX(calc(-100% - 4px))
   }
 }
 

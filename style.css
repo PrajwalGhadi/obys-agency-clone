@@ -49,6 +49,8 @@ body {
 .loader .line .counter h5 {
   font-size: 4vw;
   text-align: end;
+  font-weight: 100;
+  -webkit-text-stroke: 1px white;
   font-style: italic;
 }
 .loader .line .counter #growingCounter {
@@ -83,7 +85,6 @@ body {
 }
 main {
   position: relative;
-  overflow-x: hidden;
   background-color: #151515;
 }
 
@@ -691,6 +692,7 @@ main {
 }
 #weWork #marqueeAnimation .marquee-container, #weWork #marqueeAnimation .marquee-container2 {
   white-space: nowrap;
+  overflow-x: hidden;
 }
 #weWork #marqueeAnimation .marquee-container h1, #weWork #marqueeAnimation .marquee-container2 h1 {
   display: inline-block;
@@ -714,10 +716,10 @@ main {
 
 @keyframes marqueeAnimation {
   0% {
-    transform: translate(0%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translate(calc(-100% - 10px));
+    transform: translateX(calc(-100% - 4px));
   }
 }
 footer {
